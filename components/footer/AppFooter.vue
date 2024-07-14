@@ -76,6 +76,8 @@ export default {
   }
   &__left{
     overflow: visible;
+    color: rgba(89, 61, 43, 1);
+
   }
   &__right {
     display: flex;

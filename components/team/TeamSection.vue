@@ -3,10 +3,15 @@
     <h2 class="team__title">КОМАНДА</h2>
     <UITitle>foodtemplum</UITitle>
     <article class="team-made-row row">
-      <TeaMadeCard/>
-      <TeaMadeCard/>
-      <TeaMadeCard/>
-      <TeaMadeCard/>
+      <TeaMadeCard v-for="teamed of team"
+                   :key="teamed.id"
+                   :name="teamed.name"
+                   :position="teamed.position"
+                   :image="teamed.image"
+      />
+      <!--      <TeaMadeCard/>-->
+      <!--      <TeaMadeCard/>-->
+      <!--      <TeaMadeCard/>-->
     </article>
   </section>
 </template>
@@ -18,7 +23,37 @@ import UITitle from "~/components/Title.vue";
 
 export default {
   name: "TeamSection",
-  components: {RegisteredSvg, TeaMadeCard,UITitle},
+  components: {RegisteredSvg, TeaMadeCard, UITitle},
+  data() {
+    return {
+      team: [
+        {
+          id: 1,
+          name: 'Сукманов Валерій Олександрович',
+          position: 'Науковий керівник проекту',
+          image: '/_nuxt/assets/images/member-1.jpg'
+        },
+        {
+          id: 2,
+          name: 'Іваненко Олександр Олексійович ',
+          position: 'Засновник та генеральний директор ',
+          image: '/_nuxt/assets/images/partner2.jpg'
+        },
+        {
+          id: 3,
+          name: 'Животченко Сергій Леонідович',
+          position: 'Співзасновник',
+          image: '/_nuxt/assets/images/partner3.jpg'
+        },
+        {
+          id: 4,
+          name: 'Лебединська Наталья Іванівна',
+          position: 'Менеджер по роботі з клієнтами',
+          image: '/_nuxt/assets/images/partner4.jpg'
+        },
+      ]
+    }
+  },
   computed: {
     SECTION_ANCHORS() {
       return SECTION_ANCHORS
@@ -42,8 +77,6 @@ export default {
     margin-bottom: 20px;
 
   }
-
-
 
 
 }

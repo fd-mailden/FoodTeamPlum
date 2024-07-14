@@ -1,13 +1,27 @@
 <template>
   <div class="member col-12  col-md-6 col-xl-3" >
-    <img src="~/assets/images/member-1.jpg" alt="member photo" class="member__photo"/>
-    <h3 class="member__name">Сукманов Валерій Олександрович</h3>
-    <p class="member__position">Науковий керівник проекту</p>
+    <img :src="image" alt="member photo" class="member__photo"/>
+    <h3 class="member__name">{{name}}</h3>
+    <p class="member__position">{{position}}</p>
   </div>
 </template>
 <script>
 export default {
-  name: "TeaMadeCard"
+  name: "TeaMadeCard",
+  props: {
+    image: {
+      type: String,
+      required: true
+    },
+    name: {
+      type: String,
+      required: true
+    },
+    position: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 

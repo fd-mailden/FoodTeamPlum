@@ -41,10 +41,10 @@ export default defineNuxtConfig({
             title: 'FoodTeamPlum',
             link: [
                 {rel: 'stylesheet', href: 'https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css'}
-            ]
-            // meta: [
-            //   {name: 'description', content: 'Everything about Nuxt 3'}
-            // ],
+            ],
+            meta: [
+              {name: 'FoodTeamPlum', content: 'Hатуральний та багатофункціональний харчовий продукт, вироблений по запатентованій технології біопереробки відпрацьованої кавової гущі (SCG).'}
+            ],
             // link: [
             //   {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'}
             // ]
