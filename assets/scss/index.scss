@@ -1,0 +1,50 @@
+//@import 'vue-slick-carousel/dist/vue-slick-carousel.css';
+//@import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+@import "global-variables";
+@import "config";
+@import "mixins";
+@import "helpers";
+@import "utilities";
+@import "base";
+@import "object";
+
+
+.description-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $primary;
+  @media (max-width: $lg) {
+    font-size: 14px;
+  }
+}
+
+.sec-title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30.48px;
+  letter-spacing: 0.05em;
+  color: $primary;
+
+}
+
+.under-title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30.48px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $primary;
+  @media (max-width: $lg) {
+    font-size: 17px;
+
+  }
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
