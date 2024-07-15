@@ -31,25 +31,25 @@ export default {
           id: 1,
           name: 'Сукманов Валерій Олександрович',
           position: 'Науковий керівник проекту',
-          image: '/_nuxt/assets/images/member-1.jpg'
+          image: '/member-1.jpg'
         },
         {
           id: 2,
           name: 'Іваненко Олександр Олексійович ',
           position: 'Засновник та генеральний директор ',
-          image: '/_nuxt/assets/images/partner2.jpg'
+          image: '/partner2.jpg'
         },
         {
           id: 3,
           name: 'Животченко Сергій Леонідович',
           position: 'Співзасновник',
-          image: '/_nuxt/assets/images/partner3.jpg'
+          image: '/partner3.jpg'
         },
         {
           id: 4,
           name: 'Лебединська Наталья Іванівна',
           position: 'Менеджер по роботі з клієнтами',
-          image: '/_nuxt/assets/images/partner4.jpg'
+          image: '/partner4.jpg'
         },
       ]
     }
